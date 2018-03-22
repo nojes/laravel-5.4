@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "nojes/laravel-5.4",
+    "description": "Repository for demos/tests on Laravel PHP Framework version 5.4.*",
+    "keywords": ["framework", "laravel", "5.4"],
     "license": "MIT",
     "type": "project",
     "require": {
