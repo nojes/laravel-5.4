@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "96098e473b028cdb2529580554a1ae3e",
+    "content-hash": "4733cfab517a8e4246a8020d6c7cb03e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -740,6 +740,65 @@
                 "php"
             ],
             "time": "2018-02-28T20:30:58+00:00"
+        },
+        {
+            "name": "nojes/laravel-employees",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nojes/laravel-employees.git",
+                "reference": "566a98049fc7d12cb9ab357a71918dfb6d13caa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nojes/laravel-employees/zipball/566a98049fc7d12cb9ab357a71918dfb6d13caa1",
+                "reference": "566a98049fc7d12cb9ab357a71918dfb6d13caa1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": "~5.6|~7.0"
+            },
+            "type": "package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "nojes\\employees\\EmployeesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "nojes\\employees\\": "src",
+                    "nojes\\employees\\database\\seeds\\": "database/seeds"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vyacheslav Nozhenko",
+                    "email": "vv.nojenko@gmail.com",
+                    "homepage": "https://github.com/nojes",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package for employees management for Laravel Framework.",
+            "homepage": "https://github.com/nojes/laravel-employees",
+            "keywords": [
+                "crud",
+                "employee",
+                "employees",
+                "laravel",
+                "laravel-employees",
+                "nojes"
+            ],
+            "time": "2017-12-10T01:04:30+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3443,7 +3502,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "nojes/laravel-employees": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

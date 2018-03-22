@@ -36,7 +36,9 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        <li class="nav-item {!! Request::is('employees/employee', 'employees/position') ? "active" : "" !!}">
+                            <a href="{{ url('/employees/employee') }}">Employees</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
