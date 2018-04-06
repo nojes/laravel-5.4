@@ -167,6 +167,8 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+        nojes\employees\EmployeesServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -176,9 +178,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-        nojes\employees\EmployeesServiceProvider::class,
-
     ],
 
     /*
