@@ -61,6 +61,10 @@ class Init extends Command
             $this->comment('Admin account exists -- skipping');
         }
 
+        if ($this->confirm('Do you want to seed your database with test data?')) {
+            $this->call('db:seed');
+        }
+
         $this->comment(PHP_EOL.'Done!');
     }
 
