@@ -79,15 +79,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel Employees demo
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{ url('employees/employee') }}">Go to demo</a>
+                    <a href="https://github.com/nojes/laravel-5.4/tree/demo-employees" target="_blank">GitHub</a>
+                    <a href="https://github.com/nojes/laravel-employees" target="_blank">Package</a>
                 </div>
             </div>
         </div>
