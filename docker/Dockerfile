@@ -35,10 +35,13 @@ RUN curl -s http://getcomposer.org/installer | php && \
 # Final Touch
 #--------------------------------------------------------------------------
 #
+EXPOSE 9000
+
 RUN usermod -u 1000 www-data
 
 WORKDIR /var/www/laravel-employees
 
-CMD ["php-fpm"]
+COPY "entrypoint.sh" "/entrypoint.sh"
+RUN chmod +x /entrypoint.sh
 
-EXPOSE 9000
+CMD ["/entrypoint.sh"]
