@@ -5,7 +5,7 @@
 
 > [Laravel Employees](https://github.com/nojes/laravel-employees) package demo on Laravel version 5.4.*
 
-### Installation
+## Installation
 
 1. Clone repository:
 ```bash
@@ -17,7 +17,7 @@ $ git clone -b demo-employees https://github.com/nojes/laravel-5.4.git laravel-e
 $ cd laravel-employees
 ```
 
-#### Manual:
+### Manual:
 
 3.1. Install dependencies:
 ```bash
@@ -39,7 +39,7 @@ $ php artisan serve
 
 or 
 
-#### Docker:
+### Docker:
 
 3.1 Build docker containers and run them:
 ```bash
@@ -53,4 +53,17 @@ $ docker-compose exec app php artisan app:init
 
 4. :heavy_check_mark: Go to [http://localhost](http://localhost)
 
+## :bulb: Some tips
+
 > For access the container use `$ docker-compose exec app bash` command
+
+> For view what happened in the container, use `$ docker-compose logs app` command
+
+> Seed records count configurable in `config/employees.php`:
+```php
+'seeds' => [
+    'employee' => [
+        'count' => 50000,
+    ],
+],
+```
