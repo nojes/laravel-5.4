@@ -60,6 +60,9 @@ class Init extends Command
         } else {
             $this->comment('Admin account exists -- skipping');
         }
+        
+        $this->info('Creating storage symbolic link...');
+        $this->call('storage:link');
 
         if ($this->confirm('Do you want to seed your database with test data?')) {
             $this->call('db:seed');
