@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "62aa4c179054fd819badbfd2be38b6d6",
+    "content-hash": "bc2c0867a46277c08f28df46fd68ec45",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -913,7 +913,7 @@
         },
         {
             "name": "nojes/laravel-employees",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nojes/laravel-employees.git",
@@ -3676,9 +3676,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "nojes/laravel-employees": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
