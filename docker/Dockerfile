@@ -37,11 +37,16 @@ RUN curl -s http://getcomposer.org/installer | php && \
 #
 EXPOSE 9000
 
-RUN usermod -u 1000 www-data
+RUN groupadd -g 1000 docker && \
+    useradd -u 1000 -g docker -m docker
+
+RUN usermod -u 1001 www-data
 
 WORKDIR /var/www/laravel-employees
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
+
+USER docker
 
 CMD ["/entrypoint.sh"]
